@@ -1,8 +1,9 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 @theme {
-  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-sans:
+    'Inter', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
 html,
@@ -12,4 +13,91 @@ body {
   @media (prefers-color-scheme: dark) {
     color-scheme: dark;
   }
+}
+
+.card {
+  background: #fff;
+  border-radius: 3px;
+  overflow: hidden;
+  padding: 1.5rem;
+}
+
+.card-z300 {
+  box-shadow:
+    0 0 0 1px rgba(35, 38, 59, 0.05),
+    0 8px 16px -4px rgba(35, 38, 59, 0.25);
+}
+
+.display-body {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+}
+
+.text-xenon-800 {
+  --tw-text-opacity: 1;
+  color: rgb(4 32 119 / var(--tw-text-opacity));
+}
+
+.display-large {
+  font-size: 1.625rem;
+  font-weight: 600;
+  line-height: 2rem;
+}
+
+@media (min-width: 768px) {
+  .display-large {
+    font-size: 1.75rem;
+    font-weight: 600;
+    line-height: 2rem;
+  }
+}
+
+.bg-blue-custom {
+  background-color: #293042;
+}
+
+.sidebar-brand {
+  font-weight: 500;
+  font-size: 1.125rem;
+  padding: 1.15rem 1.5rem;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.navbar {
+  border-bottom: 0;
+  box-shadow: 0 0 2rem #2930421a;
+}
+
+.text-blue-custom {
+  color: #568fed;
+}
+
+.value-text {
+  display: none;
+}
+
+.shadow-custom {
+  box-shadow: 0 0 0.875rem #2930420d;
+}
+
+.bg-icon {
+  background: #e0eafc;
+  border-radius: 50%;
+  padding: 0.75rem;
+  width: 48px;
+  height: 48px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.bg-icon svg {
+  color: #3f80ea;
+  width: 24px;
+  height: 24px;
 }

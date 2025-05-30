@@ -1,0 +1,8 @@
+dist
+node_modules
+src/tests
+src/test.ts
+src/environments
+!/.vscode/
+!/coverage/
+!/.vscode/extensions.json
