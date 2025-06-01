@@ -98,7 +98,7 @@ const SensorConfigForm = () => {
         <label
           htmlFor="data_sending_interval"
           className="block text-sm font-medium text-gray-700 flex-2">
-          Intervalo de envío (seg) <br />
+          Intervalo de envío (miliseg) <br />
           <span className="text-xs text-gray-500">
             Intervalo en el que el dispositivo envía datos al servidor
           </span>
@@ -118,7 +118,7 @@ const SensorConfigForm = () => {
         <label
           htmlFor="check_threshold_interval"
           className="block text-sm font-medium text-gray-700 flex-2">
-          Intervalo de verificación (seg) <br />
+          Intervalo de verificación (miliseg) <br />
           <span className="text-xs text-gray-500">
             Intervalo en el que el dispositivo verifica los umbrales
           </span>
